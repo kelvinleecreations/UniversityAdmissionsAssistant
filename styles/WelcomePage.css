@@ -1,0 +1,70 @@
+.header {
+    background-color: rgb(19,25,33);
+    color: white;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    font-size: 15px;
+}
+
+.about {
+    margin-top: 90px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.about-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.services {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.service-container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
