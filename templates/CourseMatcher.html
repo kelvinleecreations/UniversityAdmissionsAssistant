@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Course Matcher</title>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "{{ url_for('static', filename = 'styles/CourseMatcher.css') }}">
+    </head>
+    <body>
+        <div class = "course-matcher-header">
+            <div><h1>University Admissions Assistant Course Matcher</h1></div>
+            <div class = "course-matcher-to-home-page">
+                <form action = "/" method = "POST">
+                    <button type = "Submit" class = "home-page-button">Back to Home Page</button>
+                </form>
+            </div>
+        </div>
+
+        <div class = "course-matcher-section">
+            <div class = "jc-or-poly-container">
+                <h3>Select Your Certification</h3>
+                <div class = "button-group">
+                    <button id = "button-a-level">A-Level Graduate</button>
+                    <button id = "button-poly">Polytechnic Graduate</button>
+                </div>
+            </div>
+
+            <div id = "dynamic-container" class = "dynamic-container hidden">
+                <div id = "a-level-form" class = "hidden">
+                    <div class = "form-group">
+                        <label for = "a-level-grade">Enter your A-Level Rank Points:</label>
+                        <input type = "number" id = "a-level-grade" min="0" max="70" step = "0.01" placeholder = "0.00" oninput = "updateEligibility()">
+                    </div>
+                </div>
+
+                <div id = "poly-form" class = "hidden">
+                    <div class = "form-group">
+                        <label for = "poly-grade">Enter your Polytechnic GPA:</label>
+                        <input type = "number" id = "poly-grade" min="0" max="4" step = "0.01" placeholder = "0.00" oninput = "updateEligibility()">
+                    </div>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "university-filter">Filter by University</label>
+                    <select id = "university-filter" onchange = "updateEligibility()">
+                        <option value="All">All Universities (Big 3)</option>
+                        <option value="NUS">NUS Only</option>
+                        <option value="NTU">NTU Only</option>
+                        <option value="SMU">SMU Only</option>
+                    </select>
+                </div>
+
+                <input type = "text" id = "courses-filter" placeholder = "Filter by Course" oninput = "updateEligibility()">
+                <h3>Courses Eligibility List</h3>
+                <div id = "results-container" class = "results-container">
+                    <div id = "eligible-courses-number" class = "eligible-courses-number"></div>
+                    <div id = "eligible-courses-list-container" class = "eligible-courses-list-container"></div>
+                    <div id = "exception-courses-number" class = "exception-courses-number"></div>
+                    <div id = "exception-courses-list-container" class = "exception-courses-list-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src = "{{ url_for('static', filename = 'scripts/CourseMatcher.js') }}"></script>
+    </body>
+</html>

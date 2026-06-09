@@ -1,0 +1,201 @@
+.points-calculator-header {
+    background-color: rgb(19,25,33);
+    color: white;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    grid-template-columns: 80% 20%;
+    box-sizing: border-box;
+}
+
+.calculator-to-home-page {
+    padding-right: 15px;
+}
+
+.home-page-button {
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+.instructions {
+    margin-top: 90px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.instructions-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.calculator-section {
+    margin: 20px auto; /*top and bottom, centres it perfectly*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: calc(100%-40px); /*leaves a 20px margin gap on small screens*/
+    max-width: 880px; /*stops expanding on large screens*/
+}
+
+.calculator-grid {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    gap: 10px;
+    text-align: center;
+    overflow-wrap: break-word;
+    align-items: center;
+    margin: 0;
+}
+
+.h2-subjects {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.h1-subjects {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.grades-h2-buttons-row, .grades-h1-buttons-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 5px;    
+    margin-left: 40px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.h2-buttons, .h1-buttons {
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 20px;
+    gap: 8px;
+    cursor: pointer;
+    display: flex;
+    min-width: 50px;
+}
+
+/* Active state when a grade button is clicked */
+.h2-buttons.active, .h1-buttons.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+
+/* Flex styling to center the letter text inside your square buttons */
+.h2-buttons, .h1-buttons {
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.calculator-points {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Results containers styling at the bottom of the grid */
+.results-container {
+    grid-column: span 3;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f3f5;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.scenario-box {
+    text-align: center;
+}
+
+.scenario-box h5 {
+    margin: 0 0 5px 0;
+    color: #495057;
+}
+
+.scenario-score {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.final-results-container {
+    grid-column: span 3;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f3f5;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.final-results-box {
+    text-align: center;
+    grid-column: span 3;
+    justify-content: center;
+}
+
+.final-results-box h4 {
+    margin: 0 0 5px 0;
+    color: #495057;
+}
+
+.final-score {
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
+}

@@ -1,0 +1,163 @@
+.course-matcher-header {
+    background-color: rgb(19,25,33);
+    color: white;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    grid-template-columns: 80% 20%;
+    box-sizing: border-box;
+}
+
+.home-page-button {
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+.course-matcher-section {
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: calc(100%-40px); /*leaves a 20px margin gap on small screens*/
+    max-width: 880px; /*stops expanding on large screens*/
+    border-radius: 15px;
+}
+
+.jc-or-poly-container{
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: var(--light);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+button {
+    flex: 1;
+    padding: 25px;
+    font-size: 15px;
+    border: 2px solid var(--primary);
+    background-color: white;
+    color: var(--primary);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+
+.dynamic-container{
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: var(--light);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.results-container {
+    margin-top: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.eligible-courses-list-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+}
+
+.exception-courses-list-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+}
+
+.eligible-courses-list, .exception-courses-list {
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f1f3f5;
+}
+
+strong {
+    color: royalblue;
+    font-weight: 200px;
+    font-size: 15px;
+}
+
+.requirement {
+    font-size: 15px;
+    background-color: orange;
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+}

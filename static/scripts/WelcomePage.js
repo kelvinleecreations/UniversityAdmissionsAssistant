@@ -1,14 +1,14 @@
 const services = [{
-    name: 'Points Calculator',
+    name: 'PointsCalculator',
     description: 'Applicable only for A Levels RP Computation'}, 
     {
-    name: 'Course Matcher',
+    name: 'CourseMatcher',
     description: 'View the courses that you are most likely eligible for'},
     {
-    name: 'AI Chatbot',
+    name: 'AIChatbot',
     description: 'Ask any questions you have related to admissions'},
     {
-    name: 'IGP Predictor',
+    name: 'IGPPredictor',
     description: 'Prediction for future IGP based on your selected course'
     }
     ];
@@ -18,13 +18,14 @@ let servicesHTML = '';
 services.forEach((service) => {
     servicesHTML = servicesHTML + `
     <div class = "service-container">
-        <div class = "Points Calculator">
+        <div class = "${service.name}">
             <p><b>${service.name}</b></p>
             <p><i>${service.description}</i></p>
         </div>
-        <button class = "button">Select</button>
+        <form action = "/${service.name}" method = "POST">
+            <button type = "Submit" class = "welcome-page-button">Select</button>
+        </form>
     </div>`
 });
 
 document.querySelector('.js-services-grid').innerHTML = servicesHTML;
-

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Points Calculator</title>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "{{ url_for('static', filename = 'styles/PointsCalculator.css') }}">
+    </head>
+    <body>
+        <div class = "points-calculator-header">
+            <div><h1>University Admissions Assistant Points Calculator</h1></div>
+            <div class = "calculator-to-home-page">
+                <form action = "/" method = "POST">
+                    <button type = "Submit" class = "home-page-button">Back to Home Page</button>
+                </form>
+            </div>
+        </div>
+
+        <div class = "instructions">
+            <h2>Instructions</h2>
+            <div class = "instructions-container">
+                <p>Select your A Level Grades according to the sections for auto computation.</p>
+                <p>Under this new 70 RP system, the minimum is to use <b>3 best performing H2 and 1 H1 (General Paper)</b> in the computation. If you intend to include all 4 H2 subjects, the H2 subject with the lowest grade would be automatically converted to H1 tier. All calculated totals would be rescaled to accomodate the 70 RP system.</p>
+                <p>* Do note that under this new system, Project Work and H3 subjects <b>are no longer</b> part of your UAS.</p>
+            </div>
+        </div>
+
+        <div class = "calculator-section">
+            <h3>University Admission Score Computation</h3>
+            <div class = "calculator-grid">
+                <div><h4>Subjects</h4></div>
+                <div><h4>Grade</h4></div>
+                <div><h4>Your Points</h4></div>
+
+                <div class="results-container">
+                    <div class="scenario-box">
+                        <h5>3H2 + 1H1 (GP)</h5>
+                        <div id="score-standard" class="scenario-score">0.00</div>
+                    </div>
+                    <div class="scenario-box">
+                        <h5>3H2 + 1H1 + 1H1 (GP)</h5>
+                        <div id="score-standard-additionalh1" class="scenario-score">0.00</div>
+                    </div>
+                    <div class="scenario-box">
+                        <h5>3H2 + 1H1 (GP) + MTL</h5>
+                        <div id="score-standard-mtl" class="scenario-score">0.00</div>
+                    </div>
+                    <div class="scenario-box">
+                        <h5>3H2 + 1H1 + 1H1 (GP) + MTL</h5>
+                        <div id="score-standard-additionalh1-mtl" class="scenario-score">0.00</div>
+                    </div>
+                </div>
+
+                <div class ="final-results-container">
+                    <div class ="final-results-box">
+                        <h4>Your UAS Grade:</h4>
+                        <div id="final-score" class="final-score">0.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src = "{{ url_for('static', filename = 'scripts/PointsCalculator.js') }}"></script>
+    </body>
+</html>
