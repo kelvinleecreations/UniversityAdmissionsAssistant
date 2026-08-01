@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI Chatbot</title>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "{{ url_for('static', filename = 'styles/AIChatbot.css') }}">
+    </head>
+    <body>
+        <div class = "ai-chatbot-header">
+            <div><h1>University Admissions Assistant AI Chatbot</h1></div>
+            <div class = "ai-chatbot-to-home-page">
+                <form action = "/" method = "POST">
+                    <button type = "Submit" class = "home-page-button">Back to Home Page</button>
+                </form>
+            </div>
+        </div>
+
+        <div class = "chat-container">
+            <div class = "chat-messages" id = "chat-box">
+                <div class = "message chatbot-message">Hello! Ask me anything regarding NTU admissions, matriculation and candidature matters.</div>
+            </div>
+            <div class = "chat-input-area">
+                <input type = "text" class = "user-input" id = "user-input" placeholder = "Please type your question." onkeypress="keyPress()">
+                <button class = "send-button" id = "send-button" onclick = "sendMessage()">Send</button>
+            </div>
+        </div>
+    </body>
+    <script src = "{{ url_for('static', filename = 'scripts/AIChatbot.js') }}"></script>
+</html>

@@ -1,0 +1,393 @@
+university,coursename,academicyear,rpigp,gpaigp,studentintake
+NUS,Law,2025,85,NaN,252
+NUS,Law,2024,85,3.86,246
+NUS,Law,2023,85,3.75,233
+NUS,Law,2022,85,3.82,244
+NUS,Law,2021,85,3.87,234
+NUS,Medicine,2025,85,3.87,286
+NUS,Medicine,2024,85,3.74,284
+NUS,Medicine,2023,85,3.78,280
+NUS,Medicine,2022,85,3.86,294
+NUS,Medicine,2021,85,3.82,303
+NUS,Nursing,2025,65,3.18,343
+NUS,Nursing,2024,66.25,3.23,330
+NUS,Nursing,2023,66.25,3.28,346
+NUS,Nursing,2022,66.25,3.42,314
+NUS,Nursing,2021,67.5,3.41,338
+NUS,Dentistry,2025,85,NaN,80
+NUS,Dentistry,2024,85,NaN,80
+NUS,Dentistry,2023,85,NaN,80
+NUS,Dentistry,2022,85,NaN,80
+NUS,Dentistry,2021,85,NaN,81
+NUS,Architecture,2025,67.5,3.27,165
+NUS,Architecture,2024,67.5,3.28,149
+NUS,Architecture,2023,68.75,3.54,135
+NUS,Architecture,2022,72.5,3.56,140
+NUS,Architecture,2021,67.5,3.49,159
+NUS,Engineering,2025,75,3.57,1259
+NUS,Engineering,2024,75,3.56,1247
+NUS,Engineering,2023,72.5,3.55,1292
+NUS,Engineering,2022,71.25,3.56,1167
+NUS,Engineering,2021,70.875,3.61,1294
+NUS,Industrial Design,2025,73.75,3.56,43
+NUS,Industrial Design,2024,76.25,3.6,51
+NUS,Industrial Design,2023,78.75,3.55,50
+NUS,Industrial Design,2022,72.5,3.62,44
+NUS,Industrial Design,2021,71.25,3.61,53
+NUS,Landscape Architecture,2025,68.75,3.37,47
+NUS,Landscape Architecture,2024,68.75,3.4,39
+NUS,Landscape Architecture,2023,68.75,3.36,52
+NUS,Landscape Architecture,2022,71.25,3.38,32
+NUS,Landscape Architecture,2021,71.25,3.41,28
+NUS,Computing (Business Analytics),2025,85,3.75,274
+NUS,Computing (Business Analytics),2024,85,3.81,270
+NUS,Computing (Business Analytics),2023,85,3.78,326
+NUS,Computing (Business Analytics),2022,85,3.81,295
+NUS,Computing (Business Analytics),2021,85,3.84,271
+NUS,Computing (Information Systems/Business AI Systems),2025,83.75,3.71,93
+NUS,Computing (Information Systems/Business AI Systems),2024,85,3.73,75
+NUS,Computing (Information Systems/Business AI Systems),2023,85,3.77,100
+NUS,Computing (Information Systems/Business AI Systems),2022,83.75,3.76,94
+NUS,Computing (Information Systems/Business AI Systems),2021,83.75,3.75,81
+NUS,Computing (Computer Science),2025,85,3.81,893
+NUS,Computing (Computer Science),2024,85,3.8,979
+NUS,Computing (Computer Science),2023,85,3.84,923
+NUS,Computing (Computer Science),2022,85,3.84,858
+NUS,Computing (Computer Science),2021,85,3.86,777
+NUS,Computing (Information Security),2025,83.75,3.88,47
+NUS,Computing (Information Security),2024,85,3.83,53
+NUS,Computing (Information Security),2023,82.5,3.89,61
+NUS,Computing (Information Security),2022,83.75,3.8,46
+NUS,Computing (Information Security),2021,85,3.79,40
+NUS,Computer Engineering,2025,85,3.81,203
+NUS,Computer Engineering,2024,85,3.81,234
+NUS,Computer Engineering,2023,80,3.85,263
+NUS,Computer Engineering,2022,81.25,3.88,182
+NUS,Computer Engineering,2021,82.5,3.85,197
+NUS,Data Science & Economics,2025,85,NaN,103
+NUS,Data Science & Economics,2024,85,NaN,99
+NUS,Data Science & Economics,2023,85,NaN,95
+NUS,Data Science & Economics,2022,83.75,NaN,89
+NUS,Data Science & Economics,2021,83.75,NaN,47
+NUS,Environmental Studies,2025,83.75,3.67,45
+NUS,Environmental Studies,2024,82,3.7,43
+NUS,Environmental Studies,2023,83.75,NaN,40
+NUS,Environmental Studies,2022,80,NaN,27
+NUS,Environmental Studies,2021,81.25,NaN,45
+NUS,Food Science & Technology,2025,82.5,3.64,45
+NUS,Food Science & Technology,2024,83.75,3.86,48
+NUS,Food Science & Technology,2023,85,3.86,50
+NUS,Food Science & Technology,2022,85,3.86,54
+NUS,Food Science & Technology,2021,85,NaN,52
+NUS,Humanities & Sciences,2025,77.5,3.63,1976
+NUS,Humanities & Sciences,2024,78.75,3.61,1893
+NUS,Humanities & Sciences,2023,78.75,3.62,1949
+NUS,Humanities & Sciences,2022,77.5,3.67,1971
+NUS,Humanities & Sciences,2021,78.75,3.79,2100
+NUS,Pharmaceutical Science,2025,85,3.93,65
+NUS,Pharmaceutical Science,2024,85,3.91,68
+NUS,Pharmaceutical Science,2023,85,NaN,72
+NUS,Pharmaceutical Science,2022,85,NaN,63
+NUS,Pharmaceutical Science,2021,85,NaN,59
+NUS,Pharmacy,2025,82.5,3.73,193
+NUS,Pharmacy,2024,83.75,3.8,155
+NUS,Pharmacy,2023,85,3.85,143
+NUS,Pharmacy,2022,85,3.86,154
+NUS,Pharmacy,2021,85,3.91,169
+NUS,"Philosophy, Politics & Economics",2025,85,NaN,43
+NUS,"Philosophy, Politics & Economics",2024,85,3.82,31
+NUS,"Philosophy, Politics & Economics",2023,85,NaN,37
+NUS,"Philosophy, Politics & Economics",2022,85,NaN,53
+NUS,"Philosophy, Politics & Economics",2021,85,NaN,28
+NUS,Business Administration,2025,82.5,3.61,914
+NUS,Business Administration,2024,82.5,3.69,857
+NUS,Business Administration,2023,83.125,3.75,923
+NUS,Business Administration,2022,80.625,3.73,1013
+NUS,Business Administration,2021,78.125,3.745,1229
+NTU,Medicine,2025,85,NaN,189
+NTU,Medicine,2024,85,NaN,186
+NTU,Medicine,2023,85,NaN,150
+NTU,Medicine,2022,85,NaN,167
+NTU,Medicine,2021,85,NaN,168
+NTU,Renaissance Engineering,2025,85,NaN,62
+NTU,Renaissance Engineering,2025,85,NaN,58
+NTU,Renaissance Engineering,2025,85,NaN,54
+NTU,Renaissance Engineering,2025,85,NaN,40
+NTU,Renaissance Engineering,2025,85,NaN,37
+NTU,Aerospace Engineering,2025,76.25,3.72,103
+NTU,Aerospace Engineering,2024,67.5,3.64,108
+NTU,Aerospace Engineering,2023,67.5,3.69,135
+NTU,Aerospace Engineering,2022,78.75,3.55,131
+NTU,Aerospace Engineering,2021,78.75,3.82,168
+NTU,Bioengineering,2025,71.25,3.56,119
+NTU,Bioengineering,2024,68.75,3.51,142
+NTU,Bioengineering,2023,68.75,3.52,138
+NTU,Bioengineering,2022,72.5,3.57,85
+NTU,Bioengineering,2021,75,3.53,95
+NTU,Chemical & Biomolecular Engineering,2025,70,3.5,178
+NTU,Chemical & Biomolecular Engineering,2024,70,3.51,189
+NTU,Chemical & Biomolecular Engineering,2023,70,3.52,150
+NTU,Chemical & Biomolecular Engineering,2022,72.5,3.57,162
+NTU,Chemical & Biomolecular Engineering,2021,75,3.53,193
+NTU,Civil Engineering,2025,63.75,3.48,119
+NTU,Civil Engineering,2024,61.25,3.39,137
+NTU,Civil Engineering,2023,63.75,3.43,139
+NTU,Civil Engineering,2022,63.75,3.49,130
+NTU,Civil Engineering,2021,63.75,3.45,130
+NTU,Electrical & Electronic Engineering,2025,66.25,3.48,688
+NTU,Electrical & Electronic Engineering,2024,65,3.45,678
+NTU,Electrical & Electronic Engineering,2023,65,3.44,652
+NTU,Electrical & Electronic Engineering,2022,65,3.44,620
+NTU,Electrical & Electronic Engineering,2021,66.25,3.45,647
+NTU,Engineering,2025,NaN,NaN,17
+NTU,Engineering,2024,NaN,NaN,19
+NTU,Engineering,2023,63.75,NaN,70
+NTU,Engineering,2022,67.5,NaN,45
+NTU,Engineering,2021,65,NaN,53
+NTU,Environmental Engineering,2025,68.75,3.59,54
+NTU,Environmental Engineering,2024,65,3.44,62
+NTU,Environmental Engineering,2023,68.75,3.5,54
+NTU,Environmental Engineering,2022,68.75,3.56,51
+NTU,Environmental Engineering,2021,68.75,3.5,57
+NTU,Information Engineering & Media,2025,68.75,3.57,120
+NTU,Information Engineering & Media,2024,68.75,3.56,122
+NTU,Information Engineering & Media,2023,68.75,3.62,99
+NTU,Information Engineering & Media,2022,71.25,3.66,105
+NTU,Information Engineering & Media,2021,72.5,3.66,91
+NTU,Maritime Studies,2025,70,3.59,135
+NTU,Maritime Studies,2024,68.75,3.51,139
+NTU,Maritime Studies,2023,68.75,3.51,145
+NTU,Maritime Studies,2022,68.75,3.5,129
+NTU,Maritime Studies,2021,68.75,3.5,112
+NTU,Materials Engineering,2025,68.75,3.43,176
+NTU,Materials Engineering,2024,67.5,3.38,165
+NTU,Materials Engineering,2023,67.5,3.35,157
+NTU,Materials Engineering,2022,70,3.41,166
+NTU,Materials Engineering,2021,70,3.39,170
+NTU,Mechanical Engineering,2025,65,3.49,422
+NTU,Mechanical Engineering,2024,62.5,3.47,448
+NTU,Mechanical Engineering,2023,62.5,3.39,448
+NTU,Mechanical Engineering,2022,63.75,3.37,520
+NTU,Mechanical Engineering,2021,67.5,3.49,492
+NTU,Process Engineering and Synthetic Chemistry,2025,75,NaN,9
+NTU,Process Engineering and Synthetic Chemistry,2024,NaN,NaN,NaN
+NTU,Process Engineering and Synthetic Chemistry,2023,NaN,NaN,NaN
+NTU,Process Engineering and Synthetic Chemistry,2022,NaN,NaN,NaN
+NTU,Process Engineering and Synthetic Chemistry,2021,NaN,NaN,NaN
+NTU,Robotics,2025,73.75,3.7,34
+NTU,Robotics,2024,NaN,NaN,NaN
+NTU,Robotics,2023,NaN,NaN,NaN
+NTU,Robotics,2022,NaN,NaN,NaN
+NTU,Robotics,2021,NaN,NaN,NaN
+NTU,Artificial Intelligence & Society,2025,75,NaN,27
+NTU,Artificial Intelligence & Society,2024,75,NaN,17
+NTU,Artificial Intelligence & Society,2023,NaN,NaN,NaN
+NTU,Artificial Intelligence & Society,2022,NaN,NaN,NaN
+NTU,Artificial Intelligence & Society,2021,NaN,NaN,NaN
+NTU,Computer Engineering,2025,77.5,3.66,253
+NTU,Computer Engineering,2024,75,3.65,229
+NTU,Computer Engineering,2023,75,3.6,203
+NTU,Computer Engineering,2022,77.5,3.65,180
+NTU,Computer Engineering,2021,75,3.87,96
+NTU,Computer Science,2025,80,3.78,487
+NTU,Computer Science,2025,78.75,3.75,527
+NTU,Computer Science,2025,80,3.72,497
+NTU,Computer Science,2025,82.5,3.7,402
+NTU,Computer Science,2025,83.75,3.9,478
+NTU,Data Science & Artificial Intelligence,2025,81.25,3.89,202
+NTU,Data Science & Artificial Intelligence,2024,81.25,3.9,160
+NTU,Data Science & Artificial Intelligence,2023,82.5,3.9,121
+NTU,Data Science & Artificial Intelligence,2022,83.75,3.9,75
+NTU,Data Science & Artificial Intelligence,2021,85,NaN,87
+NTU,College of Science Double Major Programmes,2025,81.25,3.82,152
+NTU,College of Science Double Major Programmes,2024,81.25,3.83,97
+NTU,College of Science Double Major Programmes,2023,81.25,3.76,111
+NTU,College of Science Double Major Programmes,2022,81.25,3.78,93
+NTU,College of Science Double Major Programmes,2021,82.5,3.56,107
+NTU,Biological Sciences,2025,80,3.64,217
+NTU,Biological Sciences,2024,77.5,3.66,232
+NTU,Biological Sciences,2023,78.75,3.73,220
+NTU,Biological Sciences,2022,80,3.71,236
+NTU,Biological Sciences,2021,81.25,3.67,219
+NTU,Chemistry & Biological Chemistry,2025,70,3.5,170
+NTU,Chemistry & Biological Chemistry,2024,70,3.61,186
+NTU,Chemistry & Biological Chemistry,2023,72.5,3.52,200
+NTU,Chemistry & Biological Chemistry,2022,72.5,3.57,170
+NTU,Chemistry & Biological Chemistry,2021,76.25,3.68,180
+NTU,Chinese Medicine,2025,76.25,NaN,39
+NTU,Chinese Medicine,2024,75,NaN,27
+NTU,Chinese Medicine,2023,NaN,NaN,NaN
+NTU,Chinese Medicine,2022,NaN,NaN,NaN
+NTU,Chinese Medicine,2021,NaN,NaN,NaN
+NTU,Environmental Earth Systems Science,2025,81.25,NaN,57
+NTU,Environmental Earth Systems Science,2024,81.25,NaN,43
+NTU,Environmental Earth Systems Science,2023,81.25,NaN,48
+NTU,Environmental Earth Systems Science,2022,82.5,NaN,48
+NTU,Environmental Earth Systems Science,2021,83.75,NaN,31
+NTU,Mathematical Sciences,2025,71.25,3.42,135
+NTU,Mathematical Sciences,2024,72.5,3.43,145
+NTU,Mathematical Sciences,2023,68.75,3.53,170
+NTU,Mathematical Sciences,2022,71.25,3.36,138
+NTU,Mathematical Sciences,2021,72.5,NaN,133
+NTU,Physics/Applied Physics,2025,66.25,3.42,65
+NTU,Physics/Applied Physics,2024,67.5,3.51,65
+NTU,Physics/Applied Physics,2023,62.5,3.37,68
+NTU,Physics/Applied Physics,2022,65,NaN,57
+NTU,Physics/Applied Physics,2021,65,3.41,67
+NTU,Accoutancy,2025,73.75,3.63,298
+NTU,Accoutancy,2024,75,3.62,314
+NTU,Accoutancy,2023,72.5,3.59,357
+NTU,Accoutancy,2022,71.25,3.65,352
+NTU,Accoutancy,2021,72.5,3.63,414
+NTU,Business,2025,73.75,3.65,732
+NTU,Business,2024,75,3.66,664
+NTU,Business,2023,73.75,3.65,796
+NTU,Business,2022,73.75,3.64,806
+NTU,Business,2021,73.75,3.64,927
+NTU,Applied Computing in Finance,2025,77.5,3.72,39
+NTU,Applied Computing in Finance,2024,78.75,3.81,44
+NTU,Applied Computing in Finance,2023,NaN,NaN,NaN
+NTU,Applied Computing in Finance,2022,NaN,NaN,NaN
+NTU,Applied Computing in Finance,2021,NaN,NaN,NaN
+NTU,School of Humanities Double Major Programmes,2025,82.5,3.51,39
+NTU,School of Humanities Double Major Programmes,2024,82.5,3.57,33
+NTU,School of Humanities Double Major Programmes,2023,82.5,3.51,54
+NTU,School of Humanities Double Major Programmes,2022,81.25,3.55,37
+NTU,School of Humanities Double Major Programmes,2021,81.25,3.54,51
+NTU,School of Social Sciences Double Major Programmes,2025,82.5,NaN,19
+NTU,School of Social Sciences Double Major Programmes,2024,83.75,NaN,32
+NTU,School of Social Sciences Double Major Programmes,2023,83.75,NaN,43
+NTU,School of Social Sciences Double Major Programmes,2022,83.75,3.76,26
+NTU,School of Social Sciences Double Major Programmes,2021,83.75,3.77,36
+NTU,"Art, Design & Media (ADM)",2025,67.5,3.43,125
+NTU,"Art, Design & Media (ADM)",2024,70,3.43,127
+NTU,"Art, Design & Media (ADM)",2023,72.5,3.41,127
+NTU,"Art, Design & Media (ADM)",2022,70,3.38,127
+NTU,"Art, Design & Media (ADM)",2021,71.25,3.36,124
+NTU,Chinese,2025,72.5,3.41,73
+NTU,Chinese,2024,72.5,3.38,74
+NTU,Chinese,2023,71.25,3.41,75
+NTU,Chinese,2022,71.25,3.42,75
+NTU,Chinese,2021,70,3.49,71
+NTU,Communication Studies,2025,76.25,3.66,154
+NTU,Communication Studies,2024,77.5,3.7,167
+NTU,Communication Studies,2023,78.75,3.7,155
+NTU,Communication Studies,2022,81.25,3.71,159
+NTU,Communication Studies,2021,81.25,3.71,176
+NTU,Economics,2025,76.25,3.6,109
+NTU,Economics,2024,73.75,3.55,122
+NTU,Economics,2023,73.75,3.63,92
+NTU,Economics,2022,72.5,3.57,112
+NTU,Economics,2021,77.5,3.63,100
+NTU,Economics and Data Science,2025,81.25,NaN,49
+NTU,Economics and Data Science,2024,81.25,NaN,41
+NTU,Economics and Data Science,2023,82.5,3.79,40
+NTU,Economics and Data Science,2022,81.25,3.76,33
+NTU,Economics and Data Science,2021,82.5,NaN,13
+NTU,English,2025,72.5,3.38,74
+NTU,English,2024,73.75,3.36,69
+NTU,English,2023,73.75,3.35,69
+NTU,English,2022,73.75,3.34,97
+NTU,English,2021,71.25,3.35,102
+NTU,History,2025,71.25,3.41,72
+NTU,History,2024,70,3.36,69
+NTU,History,2023,70,3.39,80
+NTU,History,2022,70,3.35,76
+NTU,History,2021,68.75,3.47,70
+NTU,Linguistics & Multilingual Studies,2025,72.5,3.54,54
+NTU,Linguistics & Multilingual Studies,2024,72.5,3.41,80
+NTU,Linguistics & Multilingual Studies,2023,75,3.45,63
+NTU,Linguistics & Multilingual Studies,2022,75,3.5,70
+NTU,Linguistics & Multilingual Studies,2021,71.25,3.46,92
+NTU,Philosophy,2025,72.5,3.43,32
+NTU,Philosophy,2024,72.5,3.38,28
+NTU,Philosophy,2023,72.5,3.43,28
+NTU,Philosophy,2022,72.5,3.5,39
+NTU,Philosophy,2021,70,3.55,41
+NTU,"Philosophy, Politics & Economics",2025,81.25,NaN,14
+NTU,"Philosophy, Politics & Economics",2024,81.25,NaN,12
+NTU,"Philosophy, Politics & Economics",2023,NaN,NaN,NaN
+NTU,"Philosophy, Politics & Economics",2022,NaN,NaN,NaN
+NTU,"Philosophy, Politics & Economics",2021,NaN,NaN,NaN
+NTU,Psychology,2025,78.75,3.64,105
+NTU,Psychology,2024,78.75,3.7,111
+NTU,Psychology,2023,77.75,3.75,137
+NTU,Psychology,2022,78.75,3.73,113
+NTU,Psychology,2021,78.75,3.72,147
+NTU,Public Policy & Global Affairs,2025,81.25,3.6,36
+NTU,Public Policy & Global Affairs,2024,78.75,3.59,55
+NTU,Public Policy & Global Affairs,2023,81.25,3.62,41
+NTU,Public Policy & Global Affairs,2022,78.75,3.6,47
+NTU,Public Policy & Global Affairs,2021,80,3.64,45
+NTU,Sociology,2025,72.5,3.59,84
+NTU,Sociology,2024,72.5,3.59,93
+NTU,Sociology,2023,71.25,3.59,86
+NTU,Sociology,2022,72.5,3.61,99
+NTU,Sociology,2021,75,3.62,88
+NTU,NIE Arts (Academic Discipline & Education),2025,71.25,NaN,51
+NTU,NIE Arts (Academic Discipline & Education),2024,72.5,NaN,30
+NTU,NIE Arts (Academic Discipline & Education),2023,70,NaN,42
+NTU,NIE Arts (Academic Discipline & Education),2022,70,NaN,39
+NTU,NIE Arts (Academic Discipline & Education),2021,73.75,NaN,33
+NTU,Science (Academic Discipline & Education),2025,72.5,NaN,26
+NTU,Science (Academic Discipline & Education),2024,80,NaN,32
+NTU,Science (Academic Discipline & Education),2023,76.25,NaN,22
+NTU,Science (Academic Discipline & Education),2022,78.75,NaN,24
+NTU,Science (Academic Discipline & Education),2021,78.75,NaN,32
+NTU,Sport Science & Management,2025,68.75,3.47,72
+NTU,Sport Science & Management,2024,67.5,3.52,74
+NTU,Sport Science & Management,2023,68.75,3.43,69
+NTU,Sport Science & Management,2022,68.75,3.54,70
+NTU,Sport Science & Management,2021,68.75,3.55,74
+SMU,Accountancy,2025,75,3.71,268
+SMU,Accountancy,2024,75,3.69,251
+SMU,Accountancy,2023,72.5,3.63,272
+SMU,Accountancy,2022,72.5,3.63,317
+SMU,Accountancy,2021,72.5,3.54,348
+SMU,Business Management,2025,77.5,3.78,980
+SMU,Business Management,2024,77.5,3.8,852
+SMU,Business Management,2023,75,3.7,960
+SMU,Business Management,2022,76.25,3.7,880
+SMU,Business Management,2021,76.25,3.68,894
+SMU,Law,2025,85,3.73,182
+SMU,Law,2024,85,3.75,177
+SMU,Law,2023,85,NaN,212
+SMU,Law,2022,85,NaN,175
+SMU,Law,2021,83.75,NaN,187
+SMU,Economics,2025,75,3.65,217
+SMU,Economics,2024,75,3.67,220
+SMU,Economics,2023,73.75,3.61,199
+SMU,Economics,2022,73.75,3.61,218
+SMU,Economics,2021,72.5,3.51,257
+SMU,Information Systems Management,2025,72.5,3.61,406
+SMU,Information Systems Management,2024,75,3.69,389
+SMU,Information Systems Management,2023,75,3.71,391
+SMU,Information Systems Management,2022,75,3.71,389
+SMU,Information Systems Management,2021,75,3.7,417
+SMU,Computer Science,2025,81.25,3.8,135
+SMU,Computer Science,2024,82.5,3.8,147
+SMU,Computer Science,2023,82.5,3.81,141
+SMU,Computer Science,2022,82.5,3.8,154
+SMU,Computer Science,2021,81.25,3.8,93
+SMU,Computing & Law,2025,80,NaN,30
+SMU,Computing & Law,2024,80,NaN,18
+SMU,Computing & Law,2023,80,NaN,24
+SMU,Computing & Law,2022,80,NaN,30
+SMU,Computing & Law,2021,80,NaN,25
+SMU,Software Engineering (WSDeg),2025,73.75,3.67,89
+SMU,Software Engineering (WSDeg),2024,75,3.66,83
+SMU,Software Engineering (WSDeg),2023,75,3.71,34
+SMU,Software Engineering (WSDeg),2022,75,3.71,37
+SMU,Software Engineering (WSDeg),2021,NaN,NaN,NaN
+SMU,Social Sciences,2025,75,3.65,216
+SMU,Social Sciences,2024,75,3.66,211
+SMU,Social Sciences,2023,75,3.62,277
+SMU,Social Sciences,2022,75,3.67,192
+SMU,Social Sciences,2021,76.25,3.65,237
+SMU,Deferred Declaration of Degree (College of Integrative Studies),2025,80,3.73,71
+SMU,Deferred Declaration of Degree (College of Integrative Studies),2024,80,3.73,59
+SMU,Deferred Declaration of Degree (College of Integrative Studies),2023,78.75,3.74,62
+SMU,Deferred Declaration of Degree (College of Integrative Studies),2022,NaN,NaN,NaN
+SMU,Deferred Declaration of Degree (College of Integrative Studies),2021,NaN,NaN,NaN
+
+

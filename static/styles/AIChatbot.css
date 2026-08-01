@@ -1,0 +1,125 @@
+.ai-chatbot-header {
+    background-color: rgb(19,25,33);
+    color: white;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    grid-template-columns: 80% 20%;
+    box-sizing: border-box;
+}
+
+.ai-chatbot-to-home-page {
+    padding-right: 15px;
+}
+
+.home-page-button {
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+.chat-container {
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 880px;
+    height: 80vh;
+    background: #ddd;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 25px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message {
+    max-width: 75%;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 1.4;
+    font-size: 0.95rem;
+}
+
+.chatbot-message {
+    background: white;;
+    color: black;
+    align-self: flex-start;
+    border-bottom-left-radius: 2px;
+
+    line-height: 1.5;
+}
+
+.user-message {
+    background: orange;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 2px;
+}
+
+.chat-input-area {
+    display: flex;
+    border-top: 1px solid #dee2e6;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.send-button {
+    background: #426f9f;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.send-button:hover {
+    background: #067bf8;
+}
+
+.send-button:disabled {
+    background: #abb1b6;
+    cursor: not-allowed;
+}
+
+.source-documents-section {
+    margin-top: 10px; 
+    font-size: 10px; 
+    color: #666; 
+    border-top: 1px dashed #ccc; 
+    padding-top: 10px;
+}
+
+.source-documents-list {
+    margin-top: 5px;
+}

@@ -1,4 +1,13 @@
-const db_courseMatcher = [
+let predictionModel = null;
+
+fetch ('/static/predictions.json')
+    .then(response => response.json())
+    .then(data => {
+        predictionModel = data;
+        console.log("Model successfully loaded.")
+    })
+
+const db_currentYearForIGPPredictor = [
     {coursename: "Law", university: "NUS", rpigp: "85", gpaigp: "##", studentintake: "252"},
     {coursename: "Medicine", university: "NUS", rpigp: "85", gpaigp: "3.87", studentintake: "286"},
     {coursename: "Nursing", university: "NUS", rpigp: "65", gpaigp: "3.18", studentintake: "343"},
@@ -81,53 +90,53 @@ const db_courseMatcher = [
     {coursename: "Deferred Declaration of Degree (College of Integrative Studies)", university: "SMU", rpigp: "80", gpaigp: "3.73", studentintake: "71"},
 ];
 
-
-// 1. Create a global variable called cert
-let cert = '';
+// 1. Create a global variable called track
+let track = '';
 
 // 2. Connect event listeners only once upon loading of the webpage (initial document readiness)
 document.addEventListener('DOMContentLoaded', () => {
-    const certRows = document.querySelectorAll('.jc-or-poly-container');
+    const trackRows = document.querySelectorAll('.jc-or-poly-container');
 
-    certRows.forEach((row) => {
+    trackRows.forEach((row) => {
         const buttons = row.querySelectorAll('button');
 
         buttons.forEach((button) => {
             button.addEventListener('click', () => {
                 
-                // Dynamically identify cert type based on button id
-                const selectedCert = (button.id === 'button-a-level') ? 'A-Level' : 'Poly';
+                // Dynamically identify track type based on button id
+                const selectedTrack = (button.id === 'button-a-level') ? 'A-Level' : 'Poly';
 
                 if (button.classList.contains('active')) {
                     // First Scenario: User clicks on the already active button, turn off everything
                     button.classList.remove('active');
-                    cert = '';
+                    track = '';
                     hideAll();
-                }
+                } 
                 
                 else {
                     // Second Scenario: User clicks a new choice, turn off siblings and activate selection of that choice
                     buttons.forEach(otherButton => otherButton.classList.remove('active'));
                     button.classList.add('active');
                     
-                    cert = selectedCert;
-                    applyDynamicContainerDisplayState(selectedCert);
+                    track = selectedTrack;
+                    applyDynamicContainerDisplayState(selectedTrack);
                 }
             });
         });
     });
 });
 
-function applyDynamicContainerDisplayState(selectedCert) {
+
+function applyDynamicContainerDisplayState(selectedTrack) {
     // Display the dynamic container
     document.getElementById('dynamic-container').classList.remove('hidden');
 
-    if (selectedCert === 'A-Level') {
+    if (selectedTrack === 'A-Level') {
         document.getElementById('a-level-form').classList.remove('hidden');
-        document.getElementById('poly-form').classList.add('hidden'); // Hide poly fields
-    } else if (selectedCert === 'Poly') {
+        document.getElementById('poly-form').classList.add('hidden'); // Lock out matching poly fields
+    } else if (selectedTrack === 'Poly') {
         document.getElementById('poly-form').classList.remove('hidden');
-        document.getElementById('a-level-form').classList.add('hidden'); // Hide A-level fields
+        document.getElementById('a-level-form').classList.add('hidden'); // Lock out matching A-level fields
     }
 }
 
@@ -138,166 +147,118 @@ function hideAll() {
 }
 
 // Dynamic Update to Results Container
-function updateEligibility() {
+function updatePrediction() {
     // Get all the required DOM Elements
     const aLevelForm = document.getElementById('a-level-form');
     const polyForm = document.getElementById('poly-form');
-    const numberofeligibleCourses = document.getElementById('eligible-courses-number');
-    const eligibleListContainer = document.getElementById('eligible-courses-list-container');
-    const numberofexceptionCourses = document.getElementById('exception-courses-number');
-    const exceptionListContainer = document.getElementById('exception-courses-list-container');
+    const numberofCourses = document.getElementById('courses-number');
+    const coursesListContainer = document.getElementById('courses-list-container');
     const universityFilterOption = document.getElementById('university-filter');
-    const coursesFilterInput = document.getElementById('courses-filter').value.toLowerCase();
+    const useraLevelInput = document.getElementById('a-level-course').value.toLowerCase();
+    const userpolyInput = document.getElementById('poly-course').value.toLowerCase();
     const defaultText = "";
-    const aLevelwarningText = "Enter your Rank Points above (Maximum 70) to view your eligible courses."
-    const polywarningText = "Enter your GPA above (Maximum 4) to view your eligible courses."
-    let userGradeInput = '';
-    let userGradeInputType = '';
+    const warningText = "Please input text only."
+    let userInput = '';
+    let userInputType = '';
 
-    // Assigning the grades user type to the variable UserGradeInput, and assign the corresponding cert ('A-level' or 'Poly') to the variable userGradeInputType
-    // Dynamically show warning message if inputs are out of boundary
     // if the a-level form is not hidden,
     if (!aLevelForm.classList.contains('hidden')) {
-        const rp = document.getElementById('a-level-grade');
-        // trim() deletes white spaces at the front and end of the string. 
-        // If trim() === '' is TRUE, it means user left the input box completely empty without blank spaces, or the user typed only blank spaces
-        if (rp.value.trim() === '') { // .trim() is a string only tool. Need to inspect the raw HTML input element's string value before converting it with parseFloat()
-            numberofeligibleCourses.innerHTML = `<b>Number of Eligible Courses</b>: 0`;
-            eligibleListContainer.innerHTML = `No Eligible Courses Found. Please input your RP.`;
-            numberofexceptionCourses.innerHTML = `<b>Number of Exception Courses</b>: 0`;
-            exceptionListContainer.innerHTML = `No Exception Courses Found. Please input your RP.`;
-            return; // exits the entire function once user clears input or the input only has blank spaces
-        }
-
-        userGradeInput = parseFloat(rp.value); // looks into the string of text, extracts number within it and converts them into decimal places
-        userGradeInputType = 'A-level';
-        // If the user input grades that are out of boundary, give warning message
-        if (isNaN(userGradeInput) || userGradeInput < 0 || userGradeInput > 70) {
-            numberofeligibleCourses.innerHTML = `<b>Number of Eligible Courses</b>: 0`;
-            eligibleListContainer.innerHTML = aLevelwarningText;
-            numberofexceptionCourses.innerHTML = `<b>Number of Eligible Courses</b>: 0`;
-            exceptionListContainer.innerHTML = aLevelwarningText;
-            return;
-        }
+        userInput = useraLevelInput;
+        userInputType = 'A-level'; 
     
     // if the poly form is not hidden,
     } else if (!polyForm.classList.contains('hidden')) {
-        const gpa = document.getElementById('poly-grade');
-        // trim() deletes white spaces at the front and end of the string. 
-        // If trim() === '' is TRUE, it means user left the input box completely empty without blank spaces, or the user typed only blank spaces
-        if (gpa.value.trim() === '') { // .trim() is a string only tool. Need to inspect the raw HTML input element's string value before converting it with parseFloat()
-            numberofeligibleCourses.innerHTML = `<b>Number of Courses</b>: 0`;
-            eligibleListContainer.innerHTML = `No Eligible Courses Found. Please input your GPA.`;
-            numberofexceptionCourses.innerHTML = `<b>Number of Exception Courses</b>: 0`;
-            exceptionListContainer.innerHTML = `No Exception Courses Found. Please input your GPA.`;
-            return; // exits the entire function once user clears input or the input only has blank spaces
-        }
+        userInput = userpolyInput;
+        userInputType = 'Poly';
 
-        userGradeInput = parseFloat(gpa.value); // looks into the string of text, extract number within it and convert them into decimal.
-        userGradeInputType = 'Poly';
-        // If the user input grades that are out of boundary, give warning message
-        if (isNaN(userGradeInput) || userGradeInput < 0 || userGradeInput > 4) {
-            numberofeligibleCourses.innerHTML = `<b>Number of Eligible Courses</b>: 0`;
-            eligibleListContainer.innerHTML = polywarningText;
-            numberofexceptionCourses.innerHTML = `<b>Number of Eligible Courses</b>: 0`;
-            exceptionListContainer.innerHTML = polywarningText;
-            return;
-        }
-            
-    // If both are hidden,
+    // if both are hidden,
     } else {
-        userGradeInput = '';
-        userGradeInputType = '';
-        eligibleListContainer.innerHTML = defaultText;
+        userInput = '';
+        userInputType = '';
+        coursesListContainer.innerHTML = defaultText;
         return;
     }
 
-    // Filter courses based on grade and university selection, filtering on a row by row mechanism
+    let activeuserInput = '';
+    if (userInputType === 'A-level') {
+        activeuserInput = useraLevelInput;
+    } else {
+        activeuserInput = userpolyInput;
+    }
+
+    // User Clearing Case before any checks and filtering take place
+    // trim() deletes white spaces at the front and end of the string
+    // If trim() === '' is TRUE, it means user left the input box completely empty without blank spaces, or the user typed only blank spaces
+    if (activeuserInput.trim() === '') {
+        numberofCourses.innerHTML = `<b>Number of Courses</b>: 0`;
+        coursesListContainer.innerHTML = `No Courses Found.`;
+        return; // exits the entire function once user clears input or the input only has blank spaces
+    }
+
+    const allowedInput = /^[A-Za-z\s\/&,]+$/;
+    if (!allowedInput.test(activeuserInput)) {
+        coursesListContainer.innerHTML = warningText;
+        return;
+    }
+
+    // Filter courses based on course name typed and university selection, filtering on a row by row mechanism
     // Once false, it exits the filter for that row, excludes that row and move on to next row for filtering
-    const eligibleCourses = db_courseMatcher.filter((row) => {
+    const searchCourses = db_currentYearForIGPPredictor.filter((row) => {
         // If user filters by specific university and the row in the database does not contain the matching university, 
         // return false and remove from the display list
-        if (universityFilterOption.value !== 'All' && row.university !== universityFilterOption.value) { 
-            return false;
-        }  
-        if (!filterSearch(row.coursename, coursesFilterInput)) {
-            return false;
-        }
-        // If its a-level type, return those where user grade > min rank point. Else return those where user grade > min gpa
-        else { 
-            return ((userGradeInputType === 'A-level') ? userGradeInput >= (((row.rpigp)/90)*70).toFixed(2) : userGradeInput >= row.gpaigp);
-        }
-    });
-
-    // Filter out exceptional cases, filtering row by row
-    // Once false, it exits the filter for that row, excludes that row and move on to next row for filtering
-    const exceptionCourses = db_courseMatcher.filter((row) => {
-        // If user filters by specific university and the row in the database does not contain the matching university, 
-        // return false and remove from the display list.
         if (universityFilterOption.value !== 'All' && row.university !== universityFilterOption.value) {
             return false;
         }  
-        if (!filterSearch(row.coursename, coursesFilterInput)) {
-            return false;
+        if (!filterSearch(row.coursename, activeuserInput)) {
+            return false; 
         }
-        // If its a-level type, return those where user grade > min rank point. Else return those where user grade > min gpa
-        else {
-            return ((userGradeInputType === 'A-level') ? row.rpigp === "##" : row.gpaigp === "##");
+        else {  
+            return true; 
         }
     });
 
-    let eligiblehtml = '';
-    let exceptionhtml = '';
-
     // Display the results in the results container
-    if (eligibleCourses.length === 0) {
-        numberofeligibleCourses.innerHTML = `<b>Number of Eligible Courses</b>: ${eligibleCourses.length}`;
-        eligibleListContainer.innerHTML = `No Eligible Courses Found.`
-        numberofexceptionCourses.innerHTML = `<b>Number of Exception Courses</b>: ${exceptionCourses.length}`;
+    if (searchCourses.length === 0) {
+        numberofCourses.innerHTML = `<b>Number of Courses</b>: ${searchCourses.length}`;
+        coursesListContainer.innerHTML = "No Courses Found."}
 
-        exceptionhtml = exceptionCourses.map((row) => `
-        <div class = "exception-courses-list-container">
-            <div class = "exception-courses-list">
-                <span><strong>${row.university}</strong></span>
-                <span>${row.coursename}</span>
-                <span class = requirement>${(userGradeInputType === 'A-level') ? 'IGP: ' + row.rpigp : 'IGP: ' + row.gpaigp}</span>
-                <span>${'Intake: ' + row.studentintake}</span>
-            </div>
-        </div>`).join('');
-        exceptionListContainer.innerHTML = exceptionhtml;
-
-    } else {
-        numberofeligibleCourses.innerHTML = `<b>Number of Eligible Courses</b>: ${eligibleCourses.length}`;
-
-        eligiblehtml =  eligibleCourses.map((row) => `
-        <div class = "eligible-courses-list-container">
-            <div class = "eligible-courses-list">
-                <span><strong>${row.university}</strong></span>
-                <span>${row.coursename}</span>
-                <span class = requirement>${(userGradeInputType === 'A-level') ? 'IGP: ' + (((row.rpigp)/90)*70).toFixed(2) : 'IGP: ' + row.gpaigp}</span>
-                <span>${'Intake: ' + row.studentintake}</span>
-            </div>
-        </div>`).join('');
-        eligibleListContainer.innerHTML = eligiblehtml;
+    else {
+        numberofCourses.innerHTML = `<b>Number of Courses</b>: ${searchCourses.length}`;
         
-        numberofexceptionCourses.innerHTML = `<b>Number of Courses (Exception)</b>: ${exceptionCourses.length}`;
+        const html = searchCourses.map((row) => {
+            // Clean up current row strings to guarantee perfect key lookup match
+            const cleanedUni = row.university ? String(row.university).trim() : "";
+            const cleanedCourse = row.coursename ? String(row.coursename).trim() : "";
 
-        exceptionhtml = exceptionCourses.map((row) => `
-        <div class = "exception-courses-list-container">
-            <div class = "exception-courses-list">
-                <span><strong>${row.university}</strong></span>
-                <span>${row.coursename}</span>
-                <span class = requirement>${(userGradeInputType === 'A-level') ? 'IGP: ' + row.rpigp : 'IGP: ' + row.gpaigp}</span>
-                <span>${'Intake: ' + row.studentintake}</span>
-            </div>
-        </div>`).join('');
-        exceptionListContainer.innerHTML = exceptionhtml;
+            // Create identical lookup key to match the one in Python
+            const modelKey = `${cleanedUni},${cleanedCourse}`;
+            const predictions = predictionModel[modelKey];
+
+            // Assign Future Values. In cases when the model can't find a match, default to "N/A"
+            const futureRP = predictions? predictions.future_rpigp : "N/A";
+            const futureGPA = predictions? predictions.future_gpaigp : "N/A";
+            const futureIntake = predictions? predictions.future_studentintake : "N/A";
+
+            return `<div class = "courses-list-container">
+                <div class = "courses-list">
+                    <span><strong>${row.university}</strong></span>
+                    <span>${row.coursename}</span>
+                    <span class = requirement>${(userInputType === 'A-level') ? 'Current IGP: ' + row.rpigp : 'Current IGP: ' + row.gpaigp}</span>
+                    <span class = future-requirement>${(userInputType === 'A-level') ? 'Future IGP: ' + futureRP : 'Future IGP: ' + futureGPA}</span>
+                    <span class = requirement>${'Current Intake: ' + row.studentintake}</span>
+                    <span class = future-requirement>${'Future Intake: ' + futureIntake}</span>
+                </div>
+            </div>`;
+        }).join('');
+
+        coursesListContainer.innerHTML = html;
     }
 }
 
 // For cases where users use initials (Type CS and Computer Science can still show up in the list)
 // As long as the coursename contains a matching character with each character of the user input, it displays the course
 function filterSearch (coursename, userinput) {
+
     const courseName = coursename.toLowerCase();
     const userInput = userinput.toLowerCase().trim();
 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IGP Predictor</title>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "{{ url_for('static', filename = 'styles/IGPPredictor.css') }}">
+    </head>
+    <body>
+        <div class = "igp-predictor-header">
+            <div><h1>University Admissions Assistant IGP Predictor</h1></div>
+            <div class = "predictor-to-home-page">
+                <form action = "/" method = "POST">
+                    <button type = "Submit" class = "home-page-button">Back to Home Page</button>
+                </form>
+            </div>
+        </div>
+
+        <div class = "igp-predictor-section">
+            <div class = "jc-or-poly-container">
+                <h3>Select Your Track</h3>
+                <div class = "button-group">
+                    <button id = "button-a-level">A-Level</button>
+                    <button id = "button-poly">Polytechnic</button>
+                </div>
+            </div>
+
+            <div id = "dynamic-container" class = "dynamic-container hidden">
+                <div id = "a-level-form" class = "hidden">
+                    <div class = "form-group">
+                        <label for = "a-level-course">Enter your desired course to predict:</label>
+                        <input type = "text" id = "a-level-course" placeholder = "Enter the course name" oninput = "updatePrediction()">
+                    </div>
+                </div>
+
+                <div id = "poly-form" class = "hidden">
+                    <div class = "form-group">
+                        <label for = "poly-course">Enter your desired course to predict:</label>
+                        <input type = "text" id = "poly-course" placeholder = "Enter the course name" oninput = "updatePrediction()">
+                    </div>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "university-filter">Filter by University</label>
+                    <select id = "university-filter" onchange = "updatePrediction()">
+                        <option value="All">All Universities (Big 3)</option>
+                        <option value="NUS">NUS Only</option>
+                        <option value="NTU">NTU Only</option>
+                        <option value="SMU">SMU Only</option>
+                    </select>
+                </div>
+
+                <h3>IGP Predictions for AY26/27 Based on Your Search</h3>
+                <div id = "results-container" class = "results-container">
+                    <div id = "courses-number" class = "courses-number"></div>
+                    <div id = "courses-list-container" class = "courses-list-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src = "{{ url_for('static', filename = 'scripts/IGPPredictor.js') }}"></script>
+    </body>
+</html>

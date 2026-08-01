@@ -1,0 +1,392 @@
+{
+    "NTU,Accoutancy": {
+        "future_rpigp": 73.5,
+        "future_gpaigp": 3.62,
+        "future_studentintake": 328
+    },
+    "NTU,Aerospace Engineering": {
+        "future_rpigp": 73.25,
+        "future_gpaigp": 3.69,
+        "future_studentintake": 118
+    },
+    "NTU,Applied Computing in Finance": {
+        "future_rpigp": 77.98,
+        "future_gpaigp": 3.75,
+        "future_studentintake": 41
+    },
+    "NTU,Art, Design & Media (ADM)": {
+        "future_rpigp": 69.5,
+        "future_gpaigp": 3.42,
+        "future_studentintake": 126
+    },
+    "NTU,Artificial Intelligence & Society": {
+        "future_rpigp": 75.0,
+        "future_gpaigp": "##",
+        "future_studentintake": 23
+    },
+    "NTU,Bioengineering": {
+        "future_rpigp": 70.75,
+        "future_gpaigp": 3.54,
+        "future_studentintake": 122
+    },
+    "NTU,Biological Sciences": {
+        "future_rpigp": 79.31,
+        "future_gpaigp": 3.67,
+        "future_studentintake": 223
+    },
+    "NTU,Business": {
+        "future_rpigp": 74.06,
+        "future_gpaigp": 3.65,
+        "future_studentintake": 752
+    },
+    "NTU,Chemical & Biomolecular Engineering": {
+        "future_rpigp": 70.75,
+        "future_gpaigp": 3.52,
+        "future_studentintake": 176
+    },
+    "NTU,Chemistry & Biological Chemistry": {
+        "future_rpigp": 71.25,
+        "future_gpaigp": 3.56,
+        "future_studentintake": 180
+    },
+    "NTU,Chinese": {
+        "future_rpigp": 71.94,
+        "future_gpaigp": 3.41,
+        "future_studentintake": 74
+    },
+    "NTU,Chinese Medicine": {
+        "future_rpigp": 75.77,
+        "future_gpaigp": "##",
+        "future_studentintake": 34
+    },
+    "NTU,Civil Engineering": {
+        "future_rpigp": 63.12,
+        "future_gpaigp": 3.45,
+        "future_studentintake": 129
+    },
+    "NTU,College of Science Double Major Programmes": {
+        "future_rpigp": 81.38,
+        "future_gpaigp": 3.78,
+        "future_studentintake": 122
+    },
+    "NTU,Communication Studies": {
+        "future_rpigp": 77.94,
+        "future_gpaigp": 3.69,
+        "future_studentintake": 160
+    },
+    "NTU,Computer Engineering": {
+        "future_rpigp": 76.25,
+        "future_gpaigp": 3.67,
+        "future_studentintake": 216
+    },
+    "NTU,Computer Science": {
+        "future_rpigp": 80.31,
+        "future_gpaigp": 3.77,
+        "future_studentintake": 489
+    },
+    "NTU,Data Science & Artificial Intelligence": {
+        "future_rpigp": 82.06,
+        "future_gpaigp": 3.9,
+        "future_studentintake": 155
+    },
+    "NTU,Economics": {
+        "future_rpigp": 75.0,
+        "future_gpaigp": 3.59,
+        "future_studentintake": 109
+    },
+    "NTU,Economics and Data Science": {
+        "future_rpigp": 81.56,
+        "future_gpaigp": 3.78,
+        "future_studentintake": 40
+    },
+    "NTU,Electrical & Electronic Engineering": {
+        "future_rpigp": 65.62,
+        "future_gpaigp": 3.46,
+        "future_studentintake": 669
+    },
+    "NTU,Engineering": {
+        "future_rpigp": 65.18,
+        "future_gpaigp": "##",
+        "future_studentintake": 32
+    },
+    "NTU,English": {
+        "future_rpigp": 73.0,
+        "future_gpaigp": 3.36,
+        "future_studentintake": 77
+    },
+    "NTU,Environmental Earth Systems Science": {
+        "future_rpigp": 81.62,
+        "future_gpaigp": "##",
+        "future_studentintake": 49
+    },
+    "NTU,Environmental Engineering": {
+        "future_rpigp": 67.81,
+        "future_gpaigp": 3.53,
+        "future_studentintake": 56
+    },
+    "NTU,History": {
+        "future_rpigp": 70.38,
+        "future_gpaigp": 3.39,
+        "future_studentintake": 73
+    },
+    "NTU,Information Engineering & Media": {
+        "future_rpigp": 69.38,
+        "future_gpaigp": 3.59,
+        "future_studentintake": 113
+    },
+    "NTU,Linguistics & Multilingual Studies": {
+        "future_rpigp": 73.0,
+        "future_gpaigp": 3.48,
+        "future_studentintake": 67
+    },
+    "NTU,Maritime Studies": {
+        "future_rpigp": 69.25,
+        "future_gpaigp": 3.54,
+        "future_studentintake": 135
+    },
+    "NTU,Materials Engineering": {
+        "future_rpigp": 68.5,
+        "future_gpaigp": 3.4,
+        "future_studentintake": 169
+    },
+    "NTU,Mathematical Sciences": {
+        "future_rpigp": 71.31,
+        "future_gpaigp": 3.43,
+        "future_studentintake": 143
+    },
+    "NTU,Mechanical Engineering": {
+        "future_rpigp": 64.12,
+        "future_gpaigp": 3.46,
+        "future_studentintake": 449
+    },
+    "NTU,Medicine": {
+        "future_rpigp": 85.0,
+        "future_gpaigp": "##",
+        "future_studentintake": 178
+    },
+    "NTU,NIE Arts (Academic Discipline & Education)": {
+        "future_rpigp": 71.5,
+        "future_gpaigp": "##",
+        "future_studentintake": 41
+    },
+    "NTU,Philosophy": {
+        "future_rpigp": 72.25,
+        "future_gpaigp": 3.44,
+        "future_studentintake": 32
+    },
+    "NTU,Philosophy, Politics & Economics": {
+        "future_rpigp": 81.25,
+        "future_gpaigp": "##",
+        "future_studentintake": 13
+    },
+    "NTU,Physics/Applied Physics": {
+        "future_rpigp": 65.75,
+        "future_gpaigp": 3.44,
+        "future_studentintake": 65
+    },
+    "NTU,Process Engineering and Synthetic Chemistry": {
+        "future_rpigp": 75.0,
+        "future_gpaigp": "##",
+        "future_studentintake": 9
+    },
+    "NTU,Psychology": {
+        "future_rpigp": 78.6,
+        "future_gpaigp": 3.69,
+        "future_studentintake": 116
+    },
+    "NTU,Public Policy & Global Affairs": {
+        "future_rpigp": 80.25,
+        "future_gpaigp": 3.6,
+        "future_studentintake": 44
+    },
+    "NTU,Renaissance Engineering": {
+        "future_rpigp": 85.0,
+        "future_gpaigp": "##",
+        "future_studentintake": 55
+    },
+    "NTU,Robotics": {
+        "future_rpigp": 73.75,
+        "future_gpaigp": 3.7,
+        "future_studentintake": 34
+    },
+    "NTU,School of Humanities Double Major Programmes": {
+        "future_rpigp": 82.25,
+        "future_gpaigp": 3.53,
+        "future_studentintake": 41
+    },
+    "NTU,School of Social Sciences Double Major Programmes": {
+        "future_rpigp": 83.25,
+        "future_gpaigp": 3.76,
+        "future_studentintake": 28
+    },
+    "NTU,Science (Academic Discipline & Education)": {
+        "future_rpigp": 76.19,
+        "future_gpaigp": "##",
+        "future_studentintake": 27
+    },
+    "NTU,Sociology": {
+        "future_rpigp": 72.56,
+        "future_gpaigp": 3.59,
+        "future_studentintake": 88
+    },
+    "NTU,Sport Science & Management": {
+        "future_rpigp": 68.44,
+        "future_gpaigp": 3.49,
+        "future_studentintake": 72
+    },
+    "NUS,Architecture": {
+        "future_rpigp": 68.19,
+        "future_gpaigp": 3.36,
+        "future_studentintake": 153
+    },
+    "NUS,Business Administration": {
+        "future_rpigp": 81.97,
+        "future_gpaigp": 3.68,
+        "future_studentintake": 942
+    },
+    "NUS,Computer Engineering": {
+        "future_rpigp": 83.62,
+        "future_gpaigp": 3.83,
+        "future_studentintake": 217
+    },
+    "NUS,Computing (Business Analytics)": {
+        "future_rpigp": 85.0,
+        "future_gpaigp": 3.78,
+        "future_studentintake": 283
+    },
+    "NUS,Computing (Computer Science)": {
+        "future_rpigp": 85.0,
+        "future_gpaigp": 3.82,
+        "future_studentintake": 904
+    },
+    "NUS,Computing (Information Security)": {
+        "future_rpigp": 84.0,
+        "future_gpaigp": 3.85,
+        "future_studentintake": 50
+    },
+    "NUS,Computing (Information Systems/Business AI Systems)": {
+        "future_rpigp": 84.25,
+        "future_gpaigp": 3.73,
+        "future_studentintake": 88
+    },
+    "NUS,Data Science & Economics": {
+        "future_rpigp": 84.75,
+        "future_gpaigp": "##",
+        "future_studentintake": 94
+    },
+    "NUS,Dentistry": {
+        "future_rpigp": 85.0,
+        "future_gpaigp": "##",
+        "future_studentintake": 80
+    },
+    "NUS,Engineering": {
+        "future_rpigp": 73.84,
+        "future_gpaigp": 3.57,
+        "future_studentintake": 1255
+    },
+    "NUS,Environmental Studies": {
+        "future_rpigp": 82.69,
+        "future_gpaigp": 3.68,
+        "future_studentintake": 42
+    },
+    "NUS,Food Science & Technology": {
+        "future_rpigp": 83.69,
+        "future_gpaigp": 3.76,
+        "future_studentintake": 48
+    },
+    "NUS,Humanities & Sciences": {
+        "future_rpigp": 78.12,
+        "future_gpaigp": 3.64,
+        "future_studentintake": 1963
+    },
+    "NUS,Industrial Design": {
+        "future_rpigp": 74.75,
+        "future_gpaigp": 3.58,
+        "future_studentintake": 47
+    },
+    "NUS,Landscape Architecture": {
+        "future_rpigp": 69.25,
+        "future_gpaigp": 3.38,
+        "future_studentintake": 42
+    },
+    "NUS,Law": {
+        "future_rpigp": 85.0,
+        "future_gpaigp": 3.83,
+        "future_studentintake": 245
+    },
+    "NUS,Medicine": {
+        "future_rpigp": 85.0,
+        "future_gpaigp": 3.82,
+        "future_studentintake": 287
+    },
+    "NUS,Nursing": {
+        "future_rpigp": 65.88,
+        "future_gpaigp": 3.25,
+        "future_studentintake": 337
+    },
+    "NUS,Pharmaceutical Science": {
+        "future_rpigp": 85.0,
+        "future_gpaigp": 3.92,
+        "future_studentintake": 66
+    },
+    "NUS,Pharmacy": {
+        "future_rpigp": 83.69,
+        "future_gpaigp": 3.8,
+        "future_studentintake": 170
+    },
+    "NUS,Philosophy, Politics & Economics": {
+        "future_rpigp": 85.0,
+        "future_gpaigp": 3.82,
+        "future_studentintake": 39
+    },
+    "SMU,Accountancy": {
+        "future_rpigp": 74.12,
+        "future_gpaigp": 3.67,
+        "future_studentintake": 277
+    },
+    "SMU,Business Management": {
+        "future_rpigp": 76.88,
+        "future_gpaigp": 3.75,
+        "future_studentintake": 926
+    },
+    "SMU,Computer Science": {
+        "future_rpigp": 81.88,
+        "future_gpaigp": 3.8,
+        "future_studentintake": 137
+    },
+    "SMU,Computing & Law": {
+        "future_rpigp": 80.0,
+        "future_gpaigp": "##",
+        "future_studentintake": 26
+    },
+    "SMU,Deferred Declaration of Degree (College of Integrative Studies)": {
+        "future_rpigp": 79.77,
+        "future_gpaigp": 3.73,
+        "future_studentintake": 66
+    },
+    "SMU,Economics": {
+        "future_rpigp": 74.44,
+        "future_gpaigp": 3.63,
+        "future_studentintake": 219
+    },
+    "SMU,Information Systems Management": {
+        "future_rpigp": 74.0,
+        "future_gpaigp": 3.66,
+        "future_studentintake": 399
+    },
+    "SMU,Law": {
+        "future_rpigp": 84.88,
+        "future_gpaigp": 3.74,
+        "future_studentintake": 185
+    },
+    "SMU,Social Sciences": {
+        "future_rpigp": 75.12,
+        "future_gpaigp": 3.65,
+        "future_studentintake": 224
+    },
+    "SMU,Software Engineering (WSDeg)": {
+        "future_rpigp": 74.44,
+        "future_gpaigp": 3.68,
+        "future_studentintake": 72
+    }
+}
